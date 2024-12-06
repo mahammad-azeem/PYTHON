@@ -35,4 +35,18 @@ print(set1 & set2)  # Output: {3}
 print(set1 - set2)  # Output: {1, 2}
 
 # Symmetric Difference
-print(set1 ^ set2)  # Output: {1, 2, 4, 5}
+print(set1 ^ set2)  # Output: {1, 2, 4, 5} #All elements of both sets except the common elements for both sets
+
+Operators	Notes
+key in s	            containment check
+key not in s	        non-containment check
+s1 == s2	            s1 is equivalent to s2
+s1 != s2	            s1 is not equivalent to s2
+s1 <= s2	            s1 is subset of s2
+s1 < s2	              s1 is proper subset of s2
+s1 >= s2	            s1 is superset of s2
+s1 > s2	              s1 is proper superset of s2
+s1 | s2	              the union of s1 and s2
+s1 & s2	              the intersection of s1 and s2
+s1 – s2	              the set of elements in s1 but not s2
+s1 ˆ s2	              the set of elements in precisely one of s1 or s2
