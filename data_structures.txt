@@ -25,6 +25,7 @@ Example:
 set1 = {1, 2, 3}
 set2 = {3, 4, 5}
 
+
 # Union
 print(set1 | set2)  # Output: {1, 2, 3, 4, 5}
 
@@ -36,6 +37,10 @@ print(set1 - set2)  # Output: {1, 2}
 
 # Symmetric Difference
 print(set1 ^ set2)  # Output: {1, 2, 4, 5} #All elements of both sets except the common elements for both sets
+
+#Adding elements
+set1.add(7)
+print(set1) #Output: {1, 2, 3, 7}
 
 Operators	Notes
 key in s	            containment check
