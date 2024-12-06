@@ -1,6 +1,12 @@
 PYTHON DATASTRUCTURES BASICS:
 
 STRINGS:
+data = 'hello'
+data[0] #Output: h #return first element #index starts with 0
+data[1:4] #Output: ell #return element starting from index 1 and ending with index 3 (n-1=4-1 in this case)
+data[-1] #Output: o #return last element
+data[:-1] #Output: hell #return all elements except last element
+data[::-1] #Output: olleh #reverse
 
 
 INT:
