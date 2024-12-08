@@ -16,6 +16,10 @@ INT:
 LIST:
 data = ['a', 'b', 'c']
 numbers = [2, 5, 4]
+urls = [
+'www.ncs.com',
+'www.wikipedia.com'
+]
 data2 = [[0, 1], ['a', 'b'], [4, 5]] #also be called as matrix
 zeroes = [0] * 100 #Output: [0, 0, 0, 0,..........0] #a list of 100 zeroes#Output: 
 data + zeroes #Output: ['a', 'b', 'c', 0, 0, 0, 0, 0,.......0] #Combines two lists data and zeroes
@@ -50,6 +54,8 @@ data = [item for item in range(5)] #Output: [0, 1, 2, 3, 4] #This is list compre
 list(zip(data, numbers)) #Output: [('a', 2), ('b', 5), ('c', 4)] #Note: Just using zip(data, numbers) outputs only the zip object.
 list(zip("xyz", numbers)) #Output: [('x', 2), ('y', 5), ('z', 4)] #Note: Just using zip(data, numbers) outputs only the zip object.
 data = deque(['a', 'b', 'c']) and data.popleft() #Output: ['b', 'c'] #Removes the first item in the list #Note: A normal list doesnt have popleft() function. Its only available in deque function #from collections import deque
+urls.lstrip("www.") #Output: ncs.com \n ikipedia.com #\n is next line #Run it in for loop like [i.lstrip("www.") for i in urls]
+urls.removeprefix("www.") #Output: ncs.com \n wikipedia.com #\n is next line #Run it in for loop like [i.removeprefix("www.") for i in urls]
 
 TUPLE:
 
