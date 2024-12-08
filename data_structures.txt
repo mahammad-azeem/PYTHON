@@ -38,6 +38,8 @@ data.pop(0) #Output: ['b', 'c'] #Remove the item with index 0 or first item in t
 data.remove("b") #Output: ['c'] #Remove the item 'b' in the list data
 del data[0:3] #Output: [] #Remove all items from 0 to 2 (except the 3 #the last item) #del will delete range of items in the list
 data.clear() #Output: [] #Deletes all the item in the list
+data.index("a") #Output: 0 #Returns the index of the item 'a' in the list data
+data.count("a") #Output: 1 #Returns the number of occurences of the item 'a' in the list data
  
 TUPLE:
 
