@@ -26,7 +26,8 @@ data[::-1] #Output: ['c', 'b', 'a'] #reverse #similar to strings
 data[0] = "A" #Output: ['A', 'b', 'c', 'd'] #Assigns new value to the first item in the list data
 data[0:3] #same as data[:3] #Output: ['A', 'b', 'c'] #Returns elements of list data starting from index 0 to 2 (3 not included)
 data[0:] #same as data[:] #output: ['A', 'b', 'c', 'd'] #Returns all elements starting from 0 till end of the list
-
+data[::2] #Output: ['a', 'c'] #Prints every other element in the list data #For example data = list(range(10)) and data[::2] #Output: [0, 2, 4, 6, 8] #Prints even numbers
+first, second, third = data #Output: first = 'a' second = 'b' and third = 'c' #This is called List unpacking and note that numbers of variables on the left must be equla to the length of the list data
 
 TUPLE:
 
