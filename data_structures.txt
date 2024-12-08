@@ -35,8 +35,8 @@ for i in data: print(i) #Output: a b c (each will be printed in next line. add e
 for i in enumerate(data): print(i) #Output: (0, 'a') \n (1, 'b') \n (2, 'c') #\n is next line #prints a tuple for each value in next line where first element is the index and second is the element itself. Here (0, 'a'), 0 is the index of a
 for index, letter in enumerate(data): print(index, letter) #Output 0 a \n 1 b \n 2 c #\n is next line
 data.append("d") #Output: ['a', 'b', 'c', 'd'] #Append an item at the end of the list data
-data.pop() #Output: ['a', 'b', 'c'] #Remove the last item in the list data
-data.pop(0) #Output: ['b', 'c'] #Remove the item with index 0 or first item in the list data
+data.pop() #Output: 'c' #Remove the last item in the list data
+data.pop(0) #Output: 'a' #Remove the item with index 0 or first item in the list data
 data.remove("b") #Output: ['a', 'c'] #Remove the item 'b' in the list data
 del data[0:3] #Output: [] #Remove all items from 0 to 2 (except the 3 #the last item) #del will delete range of items in the list
 data.clear() #Output: [] #Deletes all the item in the list
