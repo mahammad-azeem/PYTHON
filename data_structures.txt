@@ -60,11 +60,14 @@ urls.removeprefix("www.") #Output: ncs.com \n wikipedia.com #\n is next line #Ru
 TUPLE:
 Is a read only list
 data = (1, 2, 3, 4)
+x = 1
+y = 2
 data = () #empty tuple
 data = 1, #still a tuple
 data = (1, 2) + (3, 4) #Output: (1, 2, 3, 4)
 data[0:2] #Output: 1, 2 #Similar to list. Here, 0 is the first index and 1 is the last index not 2.
 x, y, z = data #Output: x=1 y=2 z=3
+x, y = y, x #Output: x = 2 \n y = 1
 
 DICTIONARY:
 
