@@ -14,6 +14,7 @@ INT:
 
 LIST:
 data = ['a', 'b', 'c']
+numbers = [2, 5, 4]
 data2 = [[0, 1], ['a', 'b'], [4, 5]] #also be called as matrix
 zeroes = [0] * 100 #Output: [0, 0, 0, 0,..........0] #a list of 100 zeroes#Output: 
 data + zeroes #Output: ['a', 'b', 'c', 0, 0, 0, 0, 0,.......0] #Combines two lists data and zeroes
@@ -35,11 +36,13 @@ for index, letter in enumerate(data): print(index, letter) #Output 0 a \n 1 b \n
 data.append("d") #Output: ['a', 'b', 'c', 'd'] #Append an item at the end of the list data
 data.pop() #Output: ['a', 'b', 'c'] #Remove the last item in the list data
 data.pop(0) #Output: ['b', 'c'] #Remove the item with index 0 or first item in the list data
-data.remove("b") #Output: ['c'] #Remove the item 'b' in the list data
+data.remove("b") #Output: ['a', 'c'] #Remove the item 'b' in the list data
 del data[0:3] #Output: [] #Remove all items from 0 to 2 (except the 3 #the last item) #del will delete range of items in the list
 data.clear() #Output: [] #Deletes all the item in the list
 data.index("a") #Output: 0 #Returns the index of the item 'a' in the list data
 data.count("a") #Output: 1 #Returns the number of occurences of the item 'a' in the list data
+numbers.sort() #Same as sorted(numbers) #Output: [2, 4, 5] #Sorts the list numbers
+numbers.sort(reverse=True) #same as sorted(numbers, reveres=True) #Output: [5, 4, 2] #Sorts in revers order
  
 TUPLE:
 
