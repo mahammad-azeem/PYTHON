@@ -72,7 +72,7 @@ tuple(listname) #Converts list or string or set into tuple
 x, y, z = data #Output: x=1 y=2 z=3
 x, y = y, x #Output: x = 2 \n y = 1
 numbers = (x for x in range(4)) #Output: (0, 1, 2, 3) #Returns a tuple of range 4. Note that this is a generator expression similar to list comprehension or dictionary comprehension. Major difference is the memory. List occupies huge memory for storing large
-data sets but tuple or generators do not
+data sets but tuple or generators do not. But, len(numbers) will give error as the items are not stored
 
 ARRAYS:
 Use only when you have large set of items and to avoid performance problems
