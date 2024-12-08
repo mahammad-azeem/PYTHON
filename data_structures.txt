@@ -31,6 +31,8 @@ data[::-1] #Output: ['c', 'b', 'a'] #reverse #similar to strings
 data[0] = "A" #Output: ['A', 'b', 'c', 'd'] #Assigns new value to the first item in the list data
 data[0:3] #same as data[:3] #Output: ['A', 'b', 'c'] #Returns elements of list data starting from index 0 to 2 (3 not included)
 data[0:] #same as data[:] #output: ['A', 'b', 'c', 'd'] #Returns all elements starting from 0 till end of the list
+max(numbers) #Output: 5 #Returns the largest/maximum number in the list
+min(numbers) #Output: 2 #Returns the smalles/minimum number in the list
 data[::2] #Output: ['a', 'c'] #Prints every other element in the list data #For example data = list(range(10)) and data[::2] #Output: [0, 2, 4, 6, 8] #Prints even numbers
 first, second, third = data #Output: first = 'a' second = 'b' and third = 'c' #This is called List unpacking and note that numbers of variables on the left must be equla to the length of the list data
 first, *other = data #Output: first = 'a' and other = ['b', 'c'] # you need to print(first) and print(other) # *other assigns the remaining values in the list to other variable
@@ -107,7 +109,8 @@ data = {x: x *2 for x in range(3)} #Output: {0: 0, 1: 2, 2: 4} #dictionary compr
 print({**data, "e": 11, **numbers, "f": 23) #Output: {"x": 1, "y": 2, "e": 11, "v": 3, "u": 4, "f": 23}
 print(*data.keys())  #Output: x y #prints all keys
 print(*data.values()) #Output: 1 2 #prints all values
-print(max(*numbers.values())) #Output: 4 #Returns the maximum value from the keys of numbers dictionary. Can be used against keys also. But, must be an integers. Example: if numbers = {1: 'a', 3: 'b'} then print(max(*numbers.keys())) #Output: 3
+print(max(*numbers.values())) #Output: 4 #Returns the largest/maximum value from the keys of numbers dictionary. Can be used against keys also. But, must be an integers. Example: if numbers = {1: 'a', 3: 'b'} then print(max(*numbers.keys())) #Output: 3
+print(min(*numbers.values())) #Output: 3 #Returns the smallest/minimum value from the keys of numbers dictionary. Can be used against keys also. But, must be an integers. Example: if numbers = {1: 'a', 3: 'b'} then print(min(*numbers.keys())) #Output: 1
 
 SETS:
 Sets in Python are unordered collection of unique elements.
