@@ -39,6 +39,7 @@ for i in data: print(i) #Output: a b c (each will be printed in next line. add e
 for i in enumerate(data): print(i) #Output: (0, 'a') \n (1, 'b') \n (2, 'c') #\n is next line #prints a tuple for each value in next line where first element is the index and second is the element itself. Here (0, 'a'), 0 is the index of a
 for index, letter in enumerate(data): print(index, letter) #Output 0 a \n 1 b \n 2 c #\n is next line
 data.append("d") #Output: ['a', 'b', 'c', 'd'] #Append an item at the end of the list data
+print(*data) #Output: a b c #Here * is unpacking operator similar to dictionaries. in the below
 data.pop() #Output: 'c' #Remove the last item in the list data
 data.pop(0) #Output: 'a' #Remove the item with index 0 or first item in the list data
 data.remove("b") and print(data) #Output: ['a', 'c'] #Remove the item 'b' in the list data #Note: just data.remove('b') wont print or output anything. You need to print to get the new state of the list data
