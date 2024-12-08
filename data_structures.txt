@@ -88,7 +88,7 @@ DICTIONARY:
 
 
 
-SET:
+SETS:
 Sets in Python are unordered collections of unique elements
 Declared as :
 order = set()
@@ -96,19 +96,13 @@ NOTE: Defining sets as order = {} will treat order as dictionary not set
 Example:
 set1 = {1, 2, 3}
 set2 = {3, 4, 5}
-
-
-# Union
-print(set1 | set2)  # Output: {1, 2, 3, 4, 5}
-
-# Intersection
-print(set1 & set2)  # Output: {3}
-
-# Difference
-print(set1 - set2)  # Output: {1, 2}
-
-# Symmetric Difference
-print(set1 ^ set2)  # Output: {1, 2, 4, 5} #All elements of both sets except the common elements for both sets
+set(data) #Converts a list into set . Here data is a list. But, this new set will contain only the unique elements as set in python are unordered collection of unique elements
+set1.add(6) #Output: Adds 6 into the set1. Can be added at any index. Need not be at the last index only.
+set1.remove(2) #Output: {1, 3} #Removes 2 from the set1 
+print(set1 | set2)  # Output: {1, 2, 3, 4, 5} # Union
+print(set1 & set2)  # Output: {3} # Intersection
+print(set1 - set2)  # Output: {1, 2} # Difference
+print(set1 ^ set2)  # Output: {1, 2, 4, 5} #All elements of both sets except the common elements for both sets # Symmetric Difference
 
 #Adding elements
 set1.add(7)
