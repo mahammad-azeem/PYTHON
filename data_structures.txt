@@ -44,7 +44,8 @@ data.index("a") #Output: 0 #Returns the index of the item 'a' in the list data
 data.count("a") #Output: 1 #Returns the number of occurences of the item 'a' in the list data
 numbers.sort() #Same as sorted(numbers) #Output: [2, 4, 5] #Sorts the list numbers
 numbers.sort(reverse=True) #same as sorted(numbers, reveres=True) #Output: [5, 4, 2] #Sorts in revers order
-map(int, numbers) #Output: converts list of string numbers to integers
+list(map(int, numbers)) #Output: converts list of string numbers to integers #Just using map(int, numbers) outputs only the map object.
+list(map(lambda item: item > 2, numbers)) #Output: [False, True, True] #Returns a list where each element corresponds to if item is greater than 2 (True) and False otherwise
 
 TUPLE:
 
