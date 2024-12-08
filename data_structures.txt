@@ -68,6 +68,7 @@ data = 1, #still a tuple
 data = (1, 2) + (3, 4) #Output: (1, 2, 3, 4)
 data[0:2] #Output: 1, 2 #Similar to list. Here, 0 is the first index and 1 is the last index not 2.
 len(data) #Output: 4 #Returns the length of the array data
+tuple(listname) #Converts list or string or set into tuple
 x, y, z = data #Output: x=1 y=2 z=3
 x, y = y, x #Output: x = 2 \n y = 1
 
@@ -103,6 +104,7 @@ set(data) #Converts a list into set . Here data is a list. But, this new set wil
 set1.add(6) #Output: Adds 6 into the set1. Can be added at any index. Need not be at the last index only.
 set1.remove(2) #Output: {1, 3} #Removes 2 from the set1 
 len(set1) #Output: 3 #Returns the length of the set set1
+set(listname) #Converts list or string or tuple into set
 print(set1 | set2)  # Output: {1, 2, 3, 4, 5} # Union
 print(set1 & set2)  # Output: {3} # Intersection
 print(set1 - set2)  # Output: {1, 2} # Difference
