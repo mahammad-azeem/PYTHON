@@ -41,11 +41,12 @@ for index, letter in enumerate(data): print(index, letter) #Output 0 a \n 1 b \n
 data.append("d") #Output: ['a', 'b', 'c', 'd'] #Append an item at the end of the list data
 data.pop() #Output: 'c' #Remove the last item in the list data
 data.pop(0) #Output: 'a' #Remove the item with index 0 or first item in the list data
-data.remove("b") and pritn(data) #Output: ['a', 'c'] #Remove the item 'b' in the list data #Note: just data.remove('b') wont print or output anything. You need to print to get the new state of the list data
- del data[0:3] #Output: [] #Remove all items from 0 to 2 (except the 3 #the last item) #del will delete range of items in the list
+data.remove("b") and print(data) #Output: ['a', 'c'] #Remove the item 'b' in the list data #Note: just data.remove('b') wont print or output anything. You need to print to get the new state of the list data
+del data[0:3] #Output: [] #Remove all items from 0 to 2 (except the 3 #the last item) #del will delete range of items in the list
 data.clear() #Output: [] #Deletes all the item in the list
 data.index("a") #Output: 0 #Returns the index of the item 'a' in the list data
 data.count("a") #Output: 1 #Returns the number of occurences of the item 'a' in the list data
+data.insert(1, 'e') #Output: ['a', 'e', 'b', 'c'] #Insert item 'e' at index 1 in list data
 numbers.sort() #Same as sorted(numbers) #Output: [2, 4, 5] #Sorts the list numbers
 numbers.sort(reverse=True) #same as sorted(numbers, reveres=True) #Output: [5, 4, 2] #Sorts in revers order
 list(map(int, numbers)) #Output: converts list of string numbers to integers #Note: Just using map(int, numbers) outputs only the map object.
@@ -68,6 +69,20 @@ data = (1, 2) + (3, 4) #Output: (1, 2, 3, 4)
 data[0:2] #Output: 1, 2 #Similar to list. Here, 0 is the first index and 1 is the last index not 2.
 x, y, z = data #Output: x=1 y=2 z=3
 x, y = y, x #Output: x = 2 \n y = 1
+
+
+ARRAYS:
+Use only when you have large set of items and to avoid performance problems
+from array import array
+data = array("i", [1, 2, 3]) #Array declaration. Here i is the typcode. check for python 3 type code documentation. It means that data is an integer array
+data[0] #Output: 1 #returns first item in the array data
+data[-1] #Output: 4 #Returns last item in the array data
+data[0:2] #Output: 1, 2 #Returns items starting with index 0 and ending with index 1 (not 2)
+data.append(4) #Output: 1, 2, 3, 4 #Appends 4 to the end of the array
+data.insert(1, 5) #Output: 1, 5, 2, 3, 4 #Insert integer 5 at index 1 in array data
+data.pop(2) #Output: 1, 3, 4 #Remove integer 2 from the array data
+data.remove(3) #Output: 1, 3 #Remove integer 3 from the array data 
+
 
 DICTIONARY:
 
