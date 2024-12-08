@@ -91,7 +91,8 @@ DICTIONARY:
 
 
 SETS:
-Sets in Python are unordered collections of unique elements
+Sets in Python are unordered collection of unique elements.
+Note: Items in the set cannot be accessed using the index as they are unordered collection of unique elements
 Declared as :
 order = set()
 NOTE: Defining sets as order = {} will treat order as dictionary not set
