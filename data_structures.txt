@@ -95,6 +95,7 @@ Collection of key, value pairs
 Declaration:
 data = dict() #Empty dictionary
 data = {"x": 1, "y": 2} #Is same as data = dict(x=1, y=2)
+numbers = {"v": 3, "u": 4}
 data["x"] #Output: 1 #Returns the value of the key x #data[key]
 data["x"] = 10 #Output: {'x': 10, 'y': 2} #Assigns the value 10 to x
 data["z"] = 15 #Output: {'x': 10, 'y': 2, 'z': 15} #Adds new value z = 15
@@ -103,6 +104,7 @@ data.get("u", 0) #Output: 0 #Returns the default value assigned that 0 for u if 
 del data["x"] #Output: {'y': 2} #Deletes the item containing key x
 for key, value in data.items(): print(key, value) #Output: x 1 \n y 2 #\n is next line
 data = {x: x *2 for x in range(3)} #Output: {0: 0, 1: 2, 2: 4} #dictionary comprehension similar to list comprehensions
+print({**data, "e": 11, **numbers, "f": 23) #Output: {"x": 1, "y": 2, "e": 11, "v": 3, "u": 4, "f": 23}
 print(*data.keys())  #Output: x y #prints all keys
 print(*data.values()) #Output: 1 2 #prints all values
 
