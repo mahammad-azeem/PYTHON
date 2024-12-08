@@ -23,7 +23,6 @@ urls = [
 data2 = [[0, 1], ['a', 'b'], [4, 5]] #also be called as matrix
 zeroes = [0] * 100 #Output: [0, 0, 0, 0,..........0] #a list of 100 zeroes#Output: 
 data + zeroes #Output: ['a', 'b', 'c', 0, 0, 0, 0, 0,.......0] #Combines two lists data and zeroes
-list(range(6)) #Output: [0, 1, 2, 3, 4, 5] #Returns numbers from 0 to 5 (last number 6 not included)
 list("Hello world") #Output: ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd'] #Returns the string in list format
 len(data) #Output: 3 #Returns the length of the list data
 data[0] #Output: a #Returns first item in the list data #index starts with 0 #This is similar to strings
@@ -35,11 +34,13 @@ data[0:] #same as data[:] #output: ['A', 'b', 'c', 'd'] #Returns all elements st
 data[::2] #Output: ['a', 'c'] #Prints every other element in the list data #For example data = list(range(10)) and data[::2] #Output: [0, 2, 4, 6, 8] #Prints even numbers
 first, second, third = data #Output: first = 'a' second = 'b' and third = 'c' #This is called List unpacking and note that numbers of variables on the left must be equla to the length of the list data
 first, *other = data #Output: first = 'a' and other = ['b', 'c'] # you need to print(first) and print(other) # *other assigns the remaining values in the list to other variable
+print([*data, 'o', *numbers, '_']) #Output: ['a', 'b', 'c', 'o', 2, 5, 4, '_']
+print(*data) #Output: a b c #Here * is unpacking operator similar to dictionaries. in the below
+list(range(6)) #Output: [0, 1, 2, 3, 4, 5] #Returns numbers from 0 to 5 (last number 6 not included)
 for i in data: print(i) #Output: a b c (each will be printed in next line. add end='' if need to print in same line)
 for i in enumerate(data): print(i) #Output: (0, 'a') \n (1, 'b') \n (2, 'c') #\n is next line #prints a tuple for each value in next line where first element is the index and second is the element itself. Here (0, 'a'), 0 is the index of a
 for index, letter in enumerate(data): print(index, letter) #Output 0 a \n 1 b \n 2 c #\n is next line
 data.append("d") #Output: ['a', 'b', 'c', 'd'] #Append an item at the end of the list data
-print(*data) #Output: a b c #Here * is unpacking operator similar to dictionaries. in the below
 data.pop() #Output: 'c' #Remove the last item in the list data
 data.pop(0) #Output: 'a' #Remove the item with index 0 or first item in the list data
 data.remove("b") and print(data) #Output: ['a', 'c'] #Remove the item 'b' in the list data #Note: just data.remove('b') wont print or output anything. You need to print to get the new state of the list data
