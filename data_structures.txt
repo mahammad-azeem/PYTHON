@@ -28,6 +28,7 @@ data[0:3] #same as data[:3] #Output: ['A', 'b', 'c'] #Returns elements of list d
 data[0:] #same as data[:] #output: ['A', 'b', 'c', 'd'] #Returns all elements starting from 0 till end of the list
 data[::2] #Output: ['a', 'c'] #Prints every other element in the list data #For example data = list(range(10)) and data[::2] #Output: [0, 2, 4, 6, 8] #Prints even numbers
 first, second, third = data #Output: first = 'a' second = 'b' and third = 'c' #This is called List unpacking and note that numbers of variables on the left must be equla to the length of the list data
+first, *other = data #Output: first = 'a' and other = ['b', 'c'] # you need to print(first) and print(other) # *other assigns the remaining values in the list to other variable
 
 TUPLE:
 
