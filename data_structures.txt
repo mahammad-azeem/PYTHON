@@ -22,8 +22,11 @@ list("Hello world") #Output: ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 
 len(data) #Output: 3 #Returns the length of the list data
 data[0] #Output: a #Returns first item in the list data #index starts with 0 #This is similar to strings
 data[-1] #Output: c #Returns last item in the list data #This is similar to strings
+data[::-1] #Output: ['c', 'b', 'a'] #reverse #similar to strings
 data[0] = "A" #Output: ['A', 'b', 'c', 'd'] #Assigns new value to the first item in the list data
-data[0:3] #Output: ['A', 'b', 'c'] #Returns first 3 items in the list
+data[0:3] #same as data[:3] #Output: ['A', 'b', 'c'] #Returns elements of list data starting from index 0 to 2 (3 not included)
+data[0:] #same as data[:] #output: ['A', 'b', 'c', 'd'] #Returns all elements starting from 0 till end of the list
+
 
 TUPLE:
 
