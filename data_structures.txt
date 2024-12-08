@@ -107,6 +107,7 @@ data = {x: x *2 for x in range(3)} #Output: {0: 0, 1: 2, 2: 4} #dictionary compr
 print({**data, "e": 11, **numbers, "f": 23) #Output: {"x": 1, "y": 2, "e": 11, "v": 3, "u": 4, "f": 23}
 print(*data.keys())  #Output: x y #prints all keys
 print(*data.values()) #Output: 1 2 #prints all values
+print(max(*numbers.values())) #Output: 4 #Returns the maximum value from the keys of numbers dictionary. Can be used against keys also. But, must be an integers. Example: if numbers = {1: 'a', 3: 'b'} then print(max(*numbers.keys())) #Output: 3
 
 SETS:
 Sets in Python are unordered collection of unique elements.
