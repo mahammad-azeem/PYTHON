@@ -7,24 +7,23 @@ data[1:4] #Output: ell #return element starting from index 1 and ending with ind
 data[-1] #Output: o #return last element
 data[:-1] #Output: hell #return all elements except last element
 data[::-1] #Output: olleh #reverse
-
+len(data) #Output: 5 #Returns the length of the string
 
 INT:
 
 
 LIST:
 data = ['a', 'b', 'c']
-data = [[0, 1], ['a', 'b'], [4, 5]] #also be called as matrix
-
-#Create a list of hundres zeros
-data = [0] * 100 
-#Output: [0, 0, 0, 0,..........0] #a list of 100 zeroes
-
-#combining lists
-data = ['a', 'b']
-zeroes = [0] * 5
-print(data + zeroes)
-#Output: ['a', 'b', 0, 0, 0, 0, 0]
+data2 = [[0, 1], ['a', 'b'], [4, 5]] #also be called as matrix
+zeroes = [0] * 100 #Output: [0, 0, 0, 0,..........0] #a list of 100 zeroes#Output: 
+data + zeroes #Output: ['a', 'b', 'c', 0, 0, 0, 0, 0,.......0] #Combines two lists data and zeroes
+list(range(6)) #Output: [0, 1, 2, 3, 4, 5] #Returns numbers from 0 to 5 (last number 6 not included)
+list("Hello world") #Output: ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd'] #Returns the string in list format
+len(data) #Output: 3 #Returns the length of the list data
+data[0] #Output: a #Returns first item in the list data #index starts with 0 #This is similar to strings
+data[-1] #Output: c #Returns last item in the list data #This is similar to strings
+data[0] = "A" #Output: ['A', 'b', 'c', 'd'] #Assigns new value to the first item in the list data
+data[0:3] #Output: ['A', 'b', 'c'] #Returns first 3 items in the list
 
 TUPLE:
 
