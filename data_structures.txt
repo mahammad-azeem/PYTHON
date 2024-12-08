@@ -8,6 +8,7 @@ data[-1] #Output: o #return last element
 data[:-1] #Output: hell #return all elements except last element
 data[::-1] #Output: olleh #reverse
 len(data) #Output: 5 #Returns the length of the string
+list(data) #Output:['h', 'e', 'l', 'l', 'o'] #Converts string into list
 
 INT:
 
@@ -43,7 +44,8 @@ data.index("a") #Output: 0 #Returns the index of the item 'a' in the list data
 data.count("a") #Output: 1 #Returns the number of occurences of the item 'a' in the list data
 numbers.sort() #Same as sorted(numbers) #Output: [2, 4, 5] #Sorts the list numbers
 numbers.sort(reverse=True) #same as sorted(numbers, reveres=True) #Output: [5, 4, 2] #Sorts in revers order
- 
+map(int, numbers) #Output: converts list of string numbers to integers
+
 TUPLE:
 
 
