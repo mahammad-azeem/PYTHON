@@ -30,7 +30,9 @@ data[::2] #Output: ['a', 'c'] #Prints every other element in the list data #For 
 first, second, third = data #Output: first = 'a' second = 'b' and third = 'c' #This is called List unpacking and note that numbers of variables on the left must be equla to the length of the list data
 first, *other = data #Output: first = 'a' and other = ['b', 'c'] # you need to print(first) and print(other) # *other assigns the remaining values in the list to other variable
 for i in data: print(i) #Output: a b c (each will be printed in next line. add end='' if need to print in same line)
-for i in enumerate(data): print(i) #Output: (0, 'a') (1, 'b'), (2, 'c') #prints a tuple for each value in next line where first element is the index and second is the element itself. Here (0, 'a'), 0 is the index of a
+for i in enumerate(data): print(i) #Output: (0, 'a') \n (1, 'b') \n (2, 'c') #\n is next line #prints a tuple for each value in next line where first element is the index and second is the element itself. Here (0, 'a'), 0 is the index of a
+for index, letter in enumerate(data): print(index, letter) #Output 0 a \n 1 b \n 2 c #\n is next line
+
 
 TUPLE:
 
