@@ -49,7 +49,8 @@ list(map(lambda item: item > 2, numbers)) #Output: [False, True, True] #Returns 
 data = [item for item in range(5)] #Output: [0, 1, 2, 3, 4] #This is list comprehension
 list(zip(data, numbers)) #Output: [('a', 2), ('b', 5), ('c', 4)] #Note: Just using zip(data, numbers) outputs only the zip object.
 list(zip("xyz", numbers)) #Output: [('x', 2), ('y', 5), ('z', 4)] #Note: Just using zip(data, numbers) outputs only the zip object.
- 
+data = deque(['a', 'b', 'c']) and data.popleft() #Output: ['b', 'c'] #Removes the first item in the list #Note: A normal list doesnt have popleft() function. Its only available in deque function #from collections import deque
+
 TUPLE:
 
 
