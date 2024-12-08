@@ -71,7 +71,8 @@ len(data) #Output: 4 #Returns the length of the array data
 tuple(listname) #Converts list or string or set into tuple
 x, y, z = data #Output: x=1 y=2 z=3
 x, y = y, x #Output: x = 2 \n y = 1
-
+numbers = (x for x in range(4)) #Output: (0, 1, 2, 3) #Returns a tuple of range 4. Note that this is a generator expression similar to list comprehension or dictionary comprehension. Major difference is the memory. List occupies huge memory for storing large
+data sets but tuple or generators do not
 
 ARRAYS:
 Use only when you have large set of items and to avoid performance problems
@@ -101,7 +102,7 @@ del data["x"] #Output: {'y': 2} #Deletes the item containing key x
 for key, value in data.items(): print(key, value) #Output: x 1 \n y 2 #\n is next line
 data = {x: x *2 for x in range(3)} #Output: {0: 0, 1: 2, 2: 4} #dictionary comprehension similar to list comprehensions
 print(*data.keys())  #Output: x y #prints all keys
-print(@data.values()) #Output: 1 2 #prints all values
+print(*data.values()) #Output: 1 2 #prints all values
 
 SETS:
 Sets in Python are unordered collection of unique elements.
