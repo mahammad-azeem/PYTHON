@@ -130,10 +130,7 @@ print(set1 | set2)  # Output: {1, 2, 3, 4, 5} # Union
 print(set1 & set2)  # Output: {3} # Intersection
 print(set1 - set2)  # Output: {1, 2} # Difference
 print(set1 ^ set2)  # Output: {1, 2, 4, 5} #All elements of both sets except the common elements for both sets # Symmetric Difference
-
-#Adding elements
-set1.add(7)
-print(set1) #Output: {1, 2, 3, 7}
+set1.add(7) \n print(set1) #Output: {1, 2, 3, 7} #Here \n is next line
 
 Operators	Notes
 key in s	            containment check
@@ -161,3 +158,8 @@ Output:
 Python set is an unordered datatype, which means we cannot know in which order the elements of the set are stored.
 {'c', 'b', 'a'}
 {'d', 'c', 'b', 'a'}
+
+Regex:
+import re
+data = 'hello'
+reg = re.sub('l', 'bb', data) \n print(reg) #Output: hebbo #Here \n is next line. (<element_to_replace>, <value_to_be_replaced_to>, variable_against_which_to_replace)
