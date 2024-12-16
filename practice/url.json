@@ -1,0 +1,114 @@
+{
+  "_class" : "hudson.model.FreeStyleProject",
+  "actions" : [
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.jobConfigHistory.JobConfigHistoryProjectAction"
+    },
+    {
+      
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.displayurlapi.actions.JobDisplayAction"
+    },
+    {
+      "_class" : "com.cloudbees.plugins.credentials.ViewCredentialsAction"
+    }
+  ],
+  "description" : "",
+  "displayName" : "terraform-test",
+  "displayNameOrNull" : null,
+  "fullDisplayName" : "terraform-test",
+  "fullName" : "terraform-test",
+  "name" : "terraform-test",
+  "url" : "http://localhost:8080/jenkins/job/terraform-test/",
+  "buildable" : true,
+  "builds" : [
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 4,
+      "url" : "http://localhost:8080/jenkins/job/terraform-test/4/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 3,
+      "url" : "http://localhost:8080/jenkins/job/terraform-test/3/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 2,
+      "url" : "http://localhost:8080/jenkins/job/terraform-test/2/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1,
+      "url" : "http://localhost:8080/jenkins/job/terraform-test/1/"
+    }
+  ],
+  "color" : "red",
+  "firstBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 1,
+    "url" : "http://localhost:8080/jenkins/job/terraform-test/1/"
+  },
+  "healthReport" : [
+    {
+      "description" : "Build stability: 3 out of the last 4 builds failed.",
+      "iconClassName" : "icon-health-20to39",
+      "iconUrl" : "health-20to39.png",
+      "score" : 25
+    }
+  ],
+  "inQueue" : false,
+  "keepDependencies" : false,
+  "lastBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 4,
+    "url" : "http://localhost:8080/jenkins/job/terraform-test/4/"
+  },
+  "lastCompletedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 4,
+    "url" : "http://localhost:8080/jenkins/job/terraform-test/4/"
+  },
+  "lastFailedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 4,
+    "url" : "http://localhost:8080/jenkins/job/terraform-test/4/"
+  },
+  "lastStableBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 2,
+    "url" : "http://localhost:8080/jenkins/job/terraform-test/2/"
+  },
+  "lastSuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 2,
+    "url" : "http://localhost:8080/jenkins/job/terraform-test/2/"
+  },
+  "lastUnstableBuild" : null,
+  "lastUnsuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 4,
+    "url" : "http://localhost:8080/jenkins/job/terraform-test/4/"
+  },
+  "nextBuildNumber" : 5,
+  "property" : [
+    
+  ],
+  "queueItem" : null,
+  "concurrentBuild" : false,
+  "disabled" : false,
+  "downstreamProjects" : [
+    
+  ],
+  "labelExpression" : null,
+  "scm" : {
+    "_class" : "hudson.scm.NullSCM"
+  },
+  "upstreamProjects" : [
+    
+  ]
+}

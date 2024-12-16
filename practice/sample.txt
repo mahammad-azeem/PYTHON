@@ -1,0 +1,62 @@
+NETWORK/HOST PORTION, BROADCAST, NETWORK AND HOST IP ADDRESS, CIDR block
+
+Step 1:
+In order to determine if a IP address is a broadcast/network or host address.
+First determine the network portion and host portion by looking at the subnet.
+
+Meaning, the bits which are zero's in subnet corresponds to respective bits in the IP address is the host portion and the remaining is the network portion.
+
+Convert the ip address into binary digits first as indicated below:
+
+For example:				 __Network Portion________
+							|						  |Host portion
+Ip address: 192.138.224.0   11000000.10001010.11100000.00000000
+subnet: 	255.255.255.0   11111111.11111111.11111111.00000000
+
+							 __Network Portion__
+							|					|Host portion
+Ip address: 192.138.224.0	11000000.10001010.11100000.00000000
+subnet:		255.255.224.0	11111111.11111111.11100000.00000000
+
+Step 2:
+Now, you can determine if an ip address is a host address or broadcast address or a network address.
+If the host portion contains all zeros in the ip address then its a network address.
+If the host portion contains all ones in the ip address then its a broadcast address.
+If the host portion contains neither or like a mix of 0's and 1's then its a host address.
+
+For example:
+
+							 __Network Portion_____
+							|					   |Host portion
+Ip address: 192.138.225.0  11000000.10001010.11100001.00000000
+Subnet:  	255.255.254.0  11111111.11111111.11111110.00000000
+
+The host portion in the above address does not contain either all 0s or all 1s hence the ip address in this case which is 192.138.225.0 is a host address.
+
+CIDR Block:
+Classless inter domain routing is another notation for subnet.
+
+Support if i write an ip address as below:
+
+192.138.225.0/24
+its subnet is: 255.255.255.0
+Meaning the first 24 bits of the ip address is the network portion.(also called length of the network prefix)
+
+192.138.225.0/12
+its subnet is: 255.252.0.0
+Meaning the first 12 bits of the ip address is the network portion.(also called length of the network prefix)
+
+192.138.225.0/16
+its subnet is: 255.255.0.0 
+Meaning the first 16 bits of the ip address is the network portion.(also called length of the network prefix)
+
+
+
+NETWORKING:
+https://www.youtube.com/watch?v=_IOZ8_cPgu8
+
+https://www.youtube.com/watch?v=yHRyNzEo8VM
+
+PROXY vs REVERSE PROXY vs LOAD BALANCER
+
+https://www.youtube.com/watch?v=xo5V9g9joFs
