@@ -11,7 +11,11 @@ len(data) #Output: 5 #Returns the length of the string
 list(data) #Output:['h', 'e', 'l', 'l', 'o'] #Converts string into list
 
 INT:
-
+value=123.456
+print("%.2f" %value)
+Output: 123.45 #Prints two decimal points after the number
+print(round(value, 1))
+Output: 123.4 #Prints one decimal point after the number
 
 LIST:
 data = ['a', 'b', 'c']
