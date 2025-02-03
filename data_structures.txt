@@ -1,7 +1,12 @@
 PYTHON DATASTRUCTURES BASICS:
 
 STRINGS:
+NOTE:
+.strip(): Removes leading and trailing characters (whitespace by default).
+.lstrip(): Removes leading characters (whitespace by default) from the left side of the string.
+.rstrip(): Removes trailing characters (whitespace by default) from the right side of the string.
 data = 'hello'
+text = ' !!!I LOVE INDIA!!! '
 data[0] #Output: h #return first element #index starts with 0
 data[1:4] #Output: ell #return element starting from index 1 and ending with index 3 (n-1=4-1 in this case)
 data[-1] #Output: o #return last element
@@ -9,6 +14,12 @@ data[:-1] #Output: hell #return all elements except last element
 data[::-1] #Output: olleh #reverse
 len(data) #Output: 5 #Returns the length of the string
 list(data) #Output:['h', 'e', 'l', 'l', 'o'] #Converts string into list
+print(text.strip()) #Output:'!!!I LOVE INDIA!!!' #removes leading and trailing whitespace characters from the string
+print(text.strip('!')) #Output:' I LOVE INDIA ' #removes leading and trailing ! character from the string
+print(text.lstrip()) #Output:'!!!I LOVE INDIA!!! ' #removes leading whitespace characters from the string
+print(text.lstrip('!')) #Output:' I LOVE INDIA!!! ' #removes leading ! character from the string
+print(text.rstrip()) #Output:' !!!I LOVE INDIA!!!' #removes trailing whitespace characters from the string
+print(text.rstrip('!')) #Output:' !!!I LOVE INDIA ' #removes trailing ! character from the string
 
 INT:
 value=123.456
